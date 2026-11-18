@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charan Sree Akhilesh Kagitapalli — Software Engineer</title>
+<title>Charan Sree Akhilesh Kagitapalli — Aspiring Developer</title>
+<meta name="description" content="Portfolio of Charan Sree Akhilesh Kagitapalli, a fresher currently learning Python, featuring web projects, education, certifications, and contact information.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -430,7 +431,6 @@
     transform-style:preserve-3d;transition:transform .42s cubic-bezier(.16,1,.3,1),border-color .3s,box-shadow .35s,opacity .3s;
     animation:projectCardIn .4s cubic-bezier(.16,1,.3,1) both;
   }
-  .proj-card[data-category="servicenow"]{--project-accent:137,164,174;}
   .proj-card:hover,.proj-card:focus-within{
     border-color:rgba(var(--project-accent),.48);
     box-shadow:0 24px 56px -28px rgba(var(--project-accent),.38),0 12px 32px -25px rgba(0,0,0,.8);
@@ -478,10 +478,6 @@
   .visual-learning .visual-tile:first-child{grid-column:span 2;}
   .visual-complaints .visual-nav i:first-child{background:rgba(194,126,99,.78);}
   .visual-complaints{--project-accent:194,126,99;}
-  .visual-servicenow{--project-accent:137,164,174;}
-  .visual-servicenow .visual-content{grid-template-columns:1fr 1fr;}
-  .visual-servicenow .visual-tile{height:24px;}
-  .visual-servicenow .visual-tile:first-child{grid-column:span 2;height:32px;}
   .proj-content{padding:23px 24px 24px;}
   .proj-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;}
   .proj-tag{font-size:10px;color:var(--gold);letter-spacing:1px;}
@@ -499,6 +495,13 @@
   .proj-link:hover,.proj-link:focus-visible{border-color:var(--gold-bright);}
   .proj-link:hover .btn-arrow{transform:translate(2px,-2px);}
   .proj-static-label{font-size:10px;color:var(--ivory-dim);}
+  .project-contact{
+    margin-top:20px;padding:22px 24px;border:1px solid var(--line);border-radius:4px;
+    display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    background:linear-gradient(110deg,rgba(201,166,107,.075),rgba(17,19,22,.58) 58%);
+  }
+  .project-contact strong{display:block;color:var(--ivory);font-family:var(--serif);font-size:18px;font-weight:500;}
+  .project-contact span{display:block;color:var(--ivory-dim);font-size:12px;margin-top:3px;}
   @keyframes projectCardIn{from{opacity:0;}to{opacity:1;}}
   @media(max-width:560px){
     .project-toolbar{align-items:flex-start;}
@@ -507,6 +510,7 @@
     .project-count{text-align:left;}
     .project-visual{height:150px;}
     .proj-content{padding:19px;}
+    .project-contact{padding:18px;}
   }
   @media(prefers-reduced-motion:reduce){
     .proj-card{animation:none;transition:none;transform:none!important;}
@@ -674,8 +678,8 @@
     <div class="nav-mark">C.S.<em>Akhilesh</em></div>
     <div class="nav-links" id="navLinks">
       <a href="#about" data-nav>About</a>
-      <a href="#skills" data-nav>Skills</a>
       <a href="#projects" data-nav>Projects</a>
+      <a href="#skills" data-nav>Skills</a>
       <a href="#process" data-nav>Approach</a>
       <a href="#education" data-nav>Education</a>
     </div>
@@ -688,8 +692,8 @@
 
 <div class="mobile-panel" id="mobilePanel">
   <a href="#about"><span>01</span>About</a>
-  <a href="#skills"><span>02</span>Skills</a>
-  <a href="#projects"><span>03</span>Projects</a>
+  <a href="#projects"><span>02</span>Projects</a>
+  <a href="#skills"><span>03</span>Skills</a>
   <a href="#process"><span>04</span>Approach</a>
   <a href="#education"><span>05</span>Education</a>
   <a href="#contact"><span>06</span>Contact</a>
@@ -698,13 +702,13 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow"><span class="rule"></span>CHARAN SREE AKHILESH · SOFTWARE ENGINEER</div>
-      <h1>Engineering systems built to <span class="name-em">earn trust.</span></h1>
-      <p class="role-line">I build <strong>full-stack Java applications</strong> and <strong>ServiceNow workflows</strong> with an eye for clarity, reliability, and thoughtful execution.</p>
+      <div class="eyebrow"><span class="rule"></span>ENTRY-LEVEL DEVELOPER · PYTHON LEARNER</div>
+      <h1>I’m an aspiring developer, learning <span class="name-em">Python</span> through hands-on projects.</h1>
+      <p class="role-line">Explore my practical projects. I’m looking for an entry-level opportunity where I can contribute, learn, and grow.</p>
       <div class="availability"><span></span>Available for entry-level opportunities</div>
       <div class="btn-row">
         <a class="btn btn-primary magnetic" href="mailto:charansriakhilesh7@gmail.com"><span class="btn-shine"></span><span class="btn-icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="#171208" stroke-width="2.4"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span>Hire me <span class="btn-arrow">→</span></a>
-        <a class="btn btn-ghost magnetic" href="https://github.com/CharansriAkhilesh" target="_blank" rel="noopener"><span class="btn-shine"></span><span class="btn-icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="#E9CD97" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91.5S18.73.15 16 2a13.38 13.38 0 0 0-7 0C6.27.15 5.09.5 5.09.5A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>View GitHub <span class="btn-arrow">↗</span></a>
+        <a class="btn btn-ghost magnetic" href="#projects"><span class="btn-shine"></span><span class="btn-icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="#E9CD97" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>View my projects <span class="btn-arrow">↓</span></a>
       </div>
     </div>
     <div class="hero-portrait tilt-scene">
@@ -732,8 +736,8 @@
   <div class="wrap">
     <div class="stats-bar">
       <div class="stat-cell"><div class="stat-num" data-target="7.82" data-decimals="2">0</div><div class="stat-label">CGPA in B.Tech CSE (AI &amp; ML)</div></div>
-      <div class="stat-cell"><div class="stat-num" data-target="4" data-suffix="+">0</div><div class="stat-label">Full-stack &amp; ServiceNow projects shipped</div></div>
-      <div class="stat-cell"><div class="stat-num" data-target="3">0</div><div class="stat-label">ServiceNow certifications earned</div></div>
+      <div class="stat-cell"><div class="stat-num" data-target="3">0</div><div class="stat-label">Web projects showcased</div></div>
+      <div class="stat-cell"><div class="stat-num" data-target="6">0</div><div class="stat-label">Certifications earned</div></div>
       <div class="stat-cell"><div class="stat-num" data-target="99.55" data-decimals="2">0</div><div class="stat-label">SSC score, Bhashyam School</div></div>
     </div>
   </div>
@@ -744,102 +748,14 @@
     <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">About</span><span class="sec-rule"></span></div>
     <div class="about-grid">
       <div class="about-text">
-        <p>I'm a <strong>Computer Science & Engineering</strong> student specializing in AI and ML, with hands-on experience building scalable software solutions. I'm proficient in Java and cloud-based platforms, and I'm a certified <strong>ServiceNow System Administrator</strong> and <strong>Application Developer</strong>.</p>
-        <p>What I'm looking for next: a software engineering role where I can help design efficient, user-centric products that solve real problems at scale — and keep learning fast while I do it.</p>
+        <p>I’m a fresher with a background in <strong>Computer Science &amp; Engineering (AI &amp; ML)</strong>, currently learning Python. My projects and certifications reflect what I’ve learned so far, and I’m continuing to build my skills through practice.</p>
+        <p>I'm looking for an entry-level software engineering opportunity where I can contribute to useful products, learn from a team, and keep growing as a developer.</p>
       </div>
       <div class="fact-list">
         <div class="fact-row"><span class="fact-label">LOCATION</span><span class="fact-value">Amalapuram, Andhra Pradesh</span></div>
         <div class="fact-row"><span class="fact-label">EDUCATION</span><span class="fact-value">B.Tech CSE (AI &amp; ML), CGPA 7.82</span></div>
-        <div class="fact-row"><span class="fact-label">FOCUS</span><span class="fact-value">Full-stack Java, ServiceNow</span></div>
-        <div class="fact-row"><span class="fact-label">STATUS</span><span class="fact-value">Open to work, 2026</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Skills</span><span class="sec-rule"></span></div>
-    <div class="skills-toolbar">
-      <div class="skills-hint">Explore my toolkit by focus area</div>
-      <div class="skills-filters" role="group" aria-label="Filter skills by category">
-        <button class="skill-filter" type="button" data-filter="all" aria-pressed="true">All skills</button>
-        <button class="skill-filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
-        <button class="skill-filter" type="button" data-filter="programming" aria-pressed="false">Programming</button>
-        <button class="skill-filter" type="button" data-filter="data" aria-pressed="false">Data</button>
-        <button class="skill-filter" type="button" data-filter="platform" aria-pressed="false">Platform</button>
-        <button class="skill-filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
-      </div>
-      <div class="skills-count" id="skillsCount" aria-live="polite">9 skills</div>
-    </div>
-    <div class="skills-list" id="skillsList">
-      <article class="skill-card" data-category="frontend" style="--skill-level:90%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">H5</div></div></div><div class="skill-card-heading"><div class="skill-name">HTML5</div><div class="skill-category">Frontend</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">90%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="HTML5 self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="frontend" style="--skill-level:85%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">C3</div></div></div><div class="skill-card-heading"><div class="skill-name">CSS3</div><div class="skill-category">Frontend</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">85%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="CSS3 self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="frontend" style="--skill-level:70%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">JS</div></div></div><div class="skill-card-heading"><div class="skill-name">JavaScript</div><div class="skill-category">Frontend</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">70%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="JavaScript self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="programming" style="--skill-level:75%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">Py</div></div></div><div class="skill-card-heading"><div class="skill-name">Python</div><div class="skill-category">Programming</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">75%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="Python self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="programming" style="--skill-level:85%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">Jv</div></div></div><div class="skill-card-heading"><div class="skill-name">Java</div><div class="skill-category">Programming</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">85%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="Java self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="data" style="--skill-level:75%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">DB</div></div></div><div class="skill-card-heading"><div class="skill-name">MySQL</div><div class="skill-category">Data</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">75%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="MySQL self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="frontend" style="--skill-level:80%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">BS</div></div></div><div class="skill-card-heading"><div class="skill-name">Bootstrap</div><div class="skill-category">Frontend</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">80%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="Bootstrap self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="platform" style="--skill-level:88%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">SN</div></div></div><div class="skill-card-heading"><div class="skill-name">ServiceNow</div><div class="skill-category">Platform</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">88%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="ServiceNow self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><div class="skill-fill"></div></div>
-      </article>
-      <article class="skill-card" data-category="tools" style="--skill-level:78%">
-        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">Git</div></div></div><div class="skill-card-heading"><div class="skill-name">Git &amp; GitHub</div><div class="skill-category">Tools</div></div></div>
-        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">78%</span></div>
-        <div class="skill-track" role="progressbar" aria-label="Git and GitHub self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><div class="skill-fill"></div></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">03</span><span class="sec-title">How I Work</span><span class="sec-rule"></span></div>
-    <div class="process-grid">
-      <div class="process-cell">
-        <div class="process-index">01</div>
-        <div class="process-title">Understand the problem</div>
-        <div class="process-desc">Before writing a line of code, I map out what the user actually needs — from patient intake flows to student ID approvals — so the build solves the real problem, not just the brief.</div>
-      </div>
-      <div class="process-cell">
-        <div class="process-index">02</div>
-        <div class="process-title">Build in layers</div>
-        <div class="process-desc">Data model, then logic, then interface. I keep each layer testable on its own — Java servlets and JDBC on the backend, clean HTML/CSS/Bootstrap on the front.</div>
-      </div>
-      <div class="process-cell">
-        <div class="process-index">03</div>
-        <div class="process-title">Ship, then refine</div>
-        <div class="process-desc">Every project here is deployed and live, not just a repo. I'd rather ship something real and improve it than polish something no one can touch.</div>
+        <div class="fact-row"><span class="fact-label">FOCUS</span><span class="fact-value">Python (learning)</span></div>
+        <div class="fact-row"><span class="fact-label">STATUS</span><span class="fact-value">Open to entry-level roles</span></div>
       </div>
     </div>
   </div>
@@ -847,15 +763,10 @@
 
 <section id="projects">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">Projects</span><span class="sec-rule"></span></div>
+    <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Selected Projects</span><span class="sec-rule"></span></div>
     <div class="project-toolbar">
-      <div class="project-intro">Selected work across full-stack development and platform automation</div>
-      <div class="project-filters" role="group" aria-label="Filter projects">
-        <button class="project-filter" type="button" data-project-filter="all" aria-pressed="true">All work</button>
-        <button class="project-filter" type="button" data-project-filter="web" aria-pressed="false">Web apps</button>
-        <button class="project-filter" type="button" data-project-filter="servicenow" aria-pressed="false">ServiceNow</button>
-      </div>
-      <div class="project-count" id="projectCount" aria-live="polite">4 projects</div>
+      <div class="project-intro">Selected web development projects</div>
+      <div class="project-count" id="projectCount" aria-live="polite">3 projects</div>
     </div>
     <div class="proj-grid">
       <article class="proj-card" data-category="web">
@@ -865,7 +776,7 @@
           <span class="visual-caption">Healthcare platform</span>
         </div>
         <div class="proj-content">
-          <div class="proj-meta"><div class="proj-tag">HEALTHCARE PLATFORM</div><span class="proj-index">01 / 04</span></div>
+          <div class="proj-meta"><div class="proj-tag">HEALTHCARE PLATFORM</div><span class="proj-index">01 / 03</span></div>
           <h3 class="proj-title">RapiDoc — Doctor Appointment System</h3>
           <ul class="proj-list">
             <li>Full-stack platform for patients to search doctors, book appointments, and manage medical profiles.</li>
@@ -883,7 +794,7 @@
           <span class="visual-caption">E-learning platform</span>
         </div>
         <div class="proj-content">
-          <div class="proj-meta"><div class="proj-tag">E-LEARNING PLATFORM</div><span class="proj-index">02 / 04</span></div>
+          <div class="proj-meta"><div class="proj-tag">E-LEARNING PLATFORM</div><span class="proj-index">02 / 03</span></div>
           <h3 class="proj-title">Passionate Learners</h3>
           <ul class="proj-list">
             <li>Web-based e-learning platform for course discovery, enrollment, and progress tracking.</li>
@@ -901,7 +812,7 @@
           <span class="visual-caption">Support system</span>
         </div>
         <div class="proj-content">
-          <div class="proj-meta"><div class="proj-tag">SUPPORT SYSTEM</div><span class="proj-index">03 / 04</span></div>
+          <div class="proj-meta"><div class="proj-tag">SUPPORT SYSTEM</div><span class="proj-index">03 / 03</span></div>
           <h3 class="proj-title">Online Complaints System</h3>
           <ul class="proj-list">
             <li>Platform for users to submit, track, and resolve complaints with real-time status updates.</li>
@@ -911,24 +822,86 @@
           <div class="proj-actions"><a class="proj-link" href="https://charansriakhilesh.netlify.app/" target="_blank" rel="noopener">View live project <span class="btn-arrow">↗</span></a><span class="proj-static-label">Web app</span></div>
         </div>
       </article>
-      <article class="proj-card" data-category="servicenow">
-        <div class="project-visual visual-servicenow" aria-hidden="true">
-          <div class="visual-orbit"></div>
-          <div class="visual-window"><div class="visual-window-bar"><i></i><i></i><i></i><span>SERVICENOW / ID REQUESTS</span></div><div class="visual-body"><div class="visual-nav"><i></i><i></i><i></i><i></i></div><div class="visual-content"><div class="visual-tile"></div><div class="visual-tile"></div><div class="visual-tile"></div></div></div></div>
-          <span class="visual-caption">Workflow automation</span>
-        </div>
-        <div class="proj-content">
-          <div class="proj-meta"><div class="proj-tag">SERVICENOW APPLICATION</div><span class="proj-index">04 / 04</span></div>
-          <h3 class="proj-title">Student ID Card Management System</h3>
-          <ul class="proj-list">
-            <li>Automated the student ID card request and approval process end to end.</li>
-            <li>Service Catalog item for online requests with automated Flow Designer approvals.</li>
-            <li>Custom tables and role-based access control (ACLs) for secure access.</li>
-          </ul>
-          <div class="proj-stack">ServiceNow · Service Catalog · Flow Designer · Custom Tables · ACLs</div>
-          <div class="proj-actions"><span class="proj-static-label">ServiceNow workflow</span></div>
-        </div>
+    </div>
+    <div class="project-contact">
+      <div><strong>Interested in working together?</strong><span>Contact me to discuss an entry-level opportunity or my project work.</span></div>
+      <a class="proj-link" href="mailto:charansriakhilesh7@gmail.com?subject=Portfolio%20-%20Opportunity">Get in touch <span class="btn-arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">03</span><span class="sec-title">Skills</span><span class="sec-rule"></span></div>
+    <div class="skills-toolbar">
+      <div class="skills-hint">Explore my toolkit by focus area</div>
+      <div class="skills-filters" role="group" aria-label="Filter skills by category">
+        <button class="skill-filter" type="button" data-filter="all" aria-pressed="true">All skills</button>
+        <button class="skill-filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        <button class="skill-filter" type="button" data-filter="programming" aria-pressed="false">Programming</button>
+        <button class="skill-filter" type="button" data-filter="data" aria-pressed="false">Data</button>
+        <button class="skill-filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+      </div>
+      <div class="skills-count" id="skillsCount" aria-live="polite">7 skills</div>
+    </div>
+    <div class="skills-list" id="skillsList">
+      <article class="skill-card" data-category="frontend" style="--skill-level:90%">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">H5</div></div></div><div class="skill-card-heading"><div class="skill-name">HTML5</div><div class="skill-category">Frontend</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">90%</span></div>
+        <div class="skill-track" role="progressbar" aria-label="HTML5 self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><div class="skill-fill"></div></div>
       </article>
+      <article class="skill-card" data-category="frontend" style="--skill-level:85%">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">C3</div></div></div><div class="skill-card-heading"><div class="skill-name">CSS3</div><div class="skill-category">Frontend</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track" role="progressbar" aria-label="CSS3 self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><div class="skill-fill"></div></div>
+      </article>
+      <article class="skill-card" data-category="frontend" style="--skill-level:70%">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">JS</div></div></div><div class="skill-card-heading"><div class="skill-name">JavaScript</div><div class="skill-category">Frontend</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track" role="progressbar" aria-label="JavaScript self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><div class="skill-fill"></div></div>
+      </article>
+      <article class="skill-card" data-category="programming">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">Py</div></div></div><div class="skill-card-heading"><div class="skill-name">Python</div><div class="skill-category">Programming</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Current focus</span><span class="skill-pct">Learning</span></div>
+      </article>
+      <article class="skill-card" data-category="data" style="--skill-level:75%">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">DB</div></div></div><div class="skill-card-heading"><div class="skill-name">MySQL</div><div class="skill-category">Data</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track" role="progressbar" aria-label="MySQL self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><div class="skill-fill"></div></div>
+      </article>
+      <article class="skill-card" data-category="frontend" style="--skill-level:80%">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">BS</div></div></div><div class="skill-card-heading"><div class="skill-name">Bootstrap</div><div class="skill-category">Frontend</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track" role="progressbar" aria-label="Bootstrap self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><div class="skill-fill"></div></div>
+      </article>
+      <article class="skill-card" data-category="tools" style="--skill-level:78%">
+        <div class="skill-card-top"><div class="skill-coin-scene"><div class="skill-coin"><div class="skill-coin-face">Git</div></div></div><div class="skill-card-heading"><div class="skill-name">Git &amp; GitHub</div><div class="skill-category">Tools</div></div></div>
+        <div class="skill-meter-head"><span class="skill-meter-label">Self-assessed proficiency</span><span class="skill-pct">78%</span></div>
+        <div class="skill-track" role="progressbar" aria-label="Git and GitHub self-assessed proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><div class="skill-fill"></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">How I Work</span><span class="sec-rule"></span></div>
+    <div class="process-grid">
+      <div class="process-cell">
+        <div class="process-index">01</div>
+        <div class="process-title">Understand the problem</div>
+        <div class="process-desc">Before writing a line of code, I map out what the user actually needs — from patient intake flows to student ID approvals — so the build solves the real problem, not just the brief.</div>
+      </div>
+      <div class="process-cell">
+        <div class="process-index">02</div>
+        <div class="process-title">Build in layers</div>
+        <div class="process-desc">I break work into clear layers — data, application logic, and interface — and use each project to strengthen my coding and problem-solving fundamentals.</div>
+      </div>
+      <div class="process-cell">
+        <div class="process-index">03</div>
+        <div class="process-title">Ship, then refine</div>
+        <div class="process-desc">Every project here is deployed and live, not just a repo. I'd rather ship something real and improve it than polish something no one can touch.</div>
+      </div>
     </div>
   </div>
 </section>
